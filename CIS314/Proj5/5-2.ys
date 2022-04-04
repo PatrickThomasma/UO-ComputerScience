@@ -1,0 +1,61 @@
+# Execution begins at address 0
+.pos 0
+irmovq stack, %rsp      # Set up stack pointer
+call main       # Execute main program
+halt            # Terminate program
+
+# Array of 10 elements
+.align 8
+array:  .quad 0x1
+.quad 0x8
+.quad 0x6
+.quad 0x9
+.quad 0x5
+.quad 0x3
+.quad 0x7
+.quad 0x2
+.quad 0x4
+.quad 0x10
+
+main:   irmovq array, %rcx
+irmovq $10, %rdx
+call sort      
+ret
+
+sort:  
+     
+loop1:
+        rrmovq %rcx, %r9 
+        rrmovq %rcx, %rdi
+        rrmovq %rdx, %r11 #outer loop initializers of selection sort
+        
+        
+loop2:  
+        irmovq $8, %r10 #intialization
+        addq %r10, %r9 #incrementation of loop
+        mrmovq (%rdi), %r12 
+        mrmovq (%r9), %r13 #moving from memory to register twice
+        subq %r12, %r13
+        cmovl %r9, %rdi #updating min pointer
+        irmovq $1, %r14
+        subq %r14, %r11 
+        andq %r11, %r11 #AND comparison
+        jne loop2
+        call swap #swapping the two elements
+        addq %r10, %rcx #another incremention for array
+        subq %r14, %rdx
+        andq %rdx, %rdx #another AND for the loop 
+        jne loop1
+        ret
+
+
+
+swap:   mrmovq (%rdi), %r12 #memory to register
+        mrmovq (%rcx), %r13
+        rmmovq %r13, (%rdi)
+        rmmovq %r12, (%rcx) #register back to memory to switch them
+        ret 
+
+# Stack starts here and grows to lower addresses
+.pos 0x200
+stack:

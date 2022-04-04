@@ -1,0 +1,12 @@
+test1			1
+test2			1
+test3			1
+test4			1
+directory structure	0
+file name		0
+compiles		0
+==============================
+Final	30
+Fails all tests and seg faults on the first two.
+The code in convert for initializing csr_row_ptr is using the incorrect loop bound.
+Also, the col_ind and vals are being copied directly - this will not work when the non-zero elements are not sorted in a specific manner.

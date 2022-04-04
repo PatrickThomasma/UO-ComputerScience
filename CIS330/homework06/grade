@@ -1,0 +1,23 @@
+subs 1			1
+cae 1			0
+rot 1			0
+rk 1			1
+vig 1			1
+subs 2			1
+cae 2			0
+rot 2			0
+rk 2			1
+vig 2			1
+directory structure	0
+file name		0
+compiles		0
+==============================
+Final	26
+
+Cipher class is not setting the cipher_alpha to the correct one in the default constructor - partial credit given for the Cipher and KCipher classes. 
+Not using the rotation algorithm described in class, as requested.
+Not reusing the data from Cipher in CCipher, RCipher, and KCipher
+KCipher not using the correct cipher for the default class - partial credit given
+Rcipher not using data from KCipher.
+
+Inconsistent indentation

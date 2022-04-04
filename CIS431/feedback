@@ -1,0 +1,7 @@
+Please add the latex source to the repo as well.
+
+No citations at all - your claims should be backed by some research or evidence (e.g., Google using NN is suspected, but nobody knows for sure).
+
+Overall, I am okay with the general area of parallelizing NN - but I would like to see more details and specific timelines on what you plan to do.
+The project could either be very simple (e.g., a three-student team was able to get a full NN with 3-4 layers implemented and evaluated for accuracy in C/C++, in addition to the usual assignments), or it could be very difficult if a more complicated network architecture is chosen.
+I would suggest identifying exactly what you plan to do and create a timeline for it.

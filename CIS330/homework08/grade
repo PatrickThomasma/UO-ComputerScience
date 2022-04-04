@@ -1,0 +1,13 @@
+unit test 1		0
+unit test 2		0
+unit test 3		0
+unit test 4		0
+directory structure	0
+file name		0
+compiles		0
+==============================
+Final	13
+
+Inconsistent indentation - do not mix tabs and spaces
+Incorrect parallel partitioning algorithm and OpenMP not used properly - there is a typoe in 'parallel' which prevented the code from being paralellized
+
