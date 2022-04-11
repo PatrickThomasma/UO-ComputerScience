@@ -19,11 +19,11 @@
 
 *CIS 410: Secure Software Development*
 
-*CIS 410: Scientific Visualization* (In-Progress)
+*CIS 410: Scientific Visualization* 
 
 *CIS 415: Operating Systems* (In-Progress)
  
-*CIS 422: Software Methodologies* (In-Progess)
+*CIS 422: Software Methodologies* 
  
 *CIS 425: Principles of Programming Languages* (In-Progress)
   
