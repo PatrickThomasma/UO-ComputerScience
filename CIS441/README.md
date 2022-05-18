@@ -15,12 +15,12 @@ Final movie can be viewed here [Movie](https://www.youtube.com/watch?v=1PQ-9w8j_
 
 # Rasterization 
 Rasterization is a technique to display three dimensional objects onto a two dimensional screen, in order to do that you will have to gather information about the triangles you are working with (information such as the colors and z-depth) in order to create a convincing 3D images onto a 2D space, Each pixel of the screen will be filled in with a color and the triangles are responsible of telling the computer what position the pixel to be colored is at and what color and whether it shows up depending on the z buffer. An example of an image that would show up with basic Rasterization is this 
-![Raster](Images/AllTriangles)
+![Raster](Images/allTriangles.png)
 
 # Camera Transformation
 When rendering graphics you the code should be able to change triangle directions depending on where the viewer is looking, how do we do that? What has to be done is to think of the image as a matrix and start doing some linear algebra calculations in order to shift that image appropriately and in a way that makes sense. Below is the same image that is seen from two different viewpoints
 ![Image1](Images/frame000.png)
-![Image2](Images/frame725.png)
+![Image2](Images/frame750.png)
 
 # Phong Shading
 Phong shading is a way to incorporate lighting into the image that you are creating, phong shading will interpolate the surface normals across polygons and will compute a pixel color based on the interpolation of the normals and the reflection model. Below you can see a comparison between a model that has phong shading and one without it.
