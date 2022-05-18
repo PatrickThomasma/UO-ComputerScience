@@ -1,0 +1,7 @@
+mkdir testdirectory
+mv fileA testdirectory
+mkdir testdirectory2
+mv testdirectory/fileA testdirectory2
+rm -r testdirectory
+rm -r testdirectory2
+touch fileA
